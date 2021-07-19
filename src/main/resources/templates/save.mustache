@@ -1,0 +1,211 @@
+{{>layout/header}}
+{{>layout/header2}}
+    {{>layout/topbar}}
+    <main>
+        <div class="py-5 text-center">
+<!--            <img class="d-block mx-auto mb-4" src="/img/gvca_logo.png" alt="" width="400" height="150">-->
+            <h2>입학지원시스템</h2>
+            <p class="lead text-left">GVCA 입학지원 안내</p>
+            <p class="lead text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+
+        <div class="py-5">
+            <!--div class="col-md-5 col-lg-4 order-md-last">
+                <h4 class="d-flex justify-content-between align-items-center mb-3">
+                    <span class="text-primary">편의기능</span>
+                </h4>
+                <ul class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">처음으로 가기</h6>
+                            <small class="text-muted"></small>
+                        </div>
+                        <span class="text-muted"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">마지막으로 가기</h6>
+                            <small class="text-muted"></small>
+                        </div>
+                        <span class="text-muted"></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between lh-sm">
+                        <div>
+                            <h6 class="my-0">중간저장</h6>
+                            <small class="text-muted">필요시 중간저장하십시요.</small>
+                        </div>
+                    </li>
+                </ul>
+
+                <form class="card p-2">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="실시간 질문하기">
+                        <button type="submit" class="btn btn-secondary">질문하기</button>
+                    </div>
+                </form>
+            </div-->
+            <div class="py-5 " >
+                <h4 class="mb-3">학생 인적사항</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Valid name is required.
+                            </div>
+                        </div>
+
+                        <!--div class="col-sm-6">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="길동" value="" required>
+                            <div class="invalid-feedback">
+                                Valid last name is required.
+                            </div>
+                        </div-->
+                        <div class="col-12">
+                            <label for="id-number" class="form-label">ID Number(주민번호)</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="id-number" placeholder="ID Number" required>
+                                <div class="invalid-feedback">
+                                    Your ID number is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="phone-number" class="form-label">Phone Number</label>
+                            <div class="input-group has-validation">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" id="phone-number" placeholder="Phone Number" required>
+                                <div class="invalid-feedback">
+                                    Your phone number is required.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Email <span class="text-muted"></span></label>
+                            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            <div class="invalid-feedback">
+                                Please enter a valid email address for shipping updates.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="세종특별자치시 소담로 000" required>
+                            <div class="invalid-feedback">
+                                Please enter your shipping address.
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
+                            <input type="text" class="form-control" id="address2" placeholder="00동 00호">
+                        </div>
+
+                        <!--div class="col-md-5">
+                            <label for="country" class="form-label">Country</label>
+                            <select class="form-select" id="country" required>
+                                <option value="">Choose...</option>
+                                <option>United States</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid country.
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="state" class="form-label">State</label>
+                            <select class="form-select" id="state" required>
+                                <option value="">Choose...</option>
+                                <option>California</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please provide a valid state.
+                            </div>
+                        </div-->
+
+                        <div class="col-md-3">
+                            <label for="zip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="zip" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Zip code required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!--div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address">
+                        <label class="form-check-label" for="same-address">Shipping address is the same as my billing address</label>
+                    </div-->
+                    <div class="my-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <div class="form-check">
+                            <input id="male" name="gender" type="radio" value="male" class="form-check-input" checked required>
+                            <label class="form-check-label" for="male">male</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="female" name="gender" type="radio" value="female" class="form-check-input" required>
+                            <label class="form-check-label" for="female">female</label>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">추가정보</h4>
+
+                    <div class="row gy-3">
+                        <div class="col-md-12">
+                            <label for="self-introduction" class="form-label">자기소개서</label>
+                            <input type="textarea" class="form-control" id="self-introduce" placeholder="" required>
+                            <div class="invalid-feedback">
+                                self-introduction required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h4 class="mb-3">비밀번호</h4>
+
+                    <div class="row gy-3">
+                        <div class="col-md-12">
+                            <label for="pwd" class="form-label">비밀번호</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="" required>
+                            <div class="invalid-feedback">
+                                password must be at least 4 digits.
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="repwd" class="form-label">비밀번호 확인</label>
+                            <input type="password" class="form-control" id="repwd" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Passwords do not match.
+                            </div>
+                        </div>
+                    </div>
+<!--                    <div class="form-group has-feedback">-->
+<!--                        <label class="control-label" for="pwd">비밀번호</label>-->
+<!--                        <input class="form-control" type="password" name="pwd" id="pwd"/>-->
+<!--                        <span id="pwdRegErr" class="help-block" style="display: none;">8글자 이상 입력하세요.</span>-->
+<!--                        <span class="glyphicon glyphicon-ok form-control-feedback" style="display: none;"></span>-->
+<!--                    </div>-->
+<!--                    <div class="form-group has-feedback">-->
+<!--                        <label class="control-label" for="rePwd">비밀번호 재확인</label>-->
+<!--                        <input class="form-control" type="password" name="rePwd" id="rePwd"/>-->
+<!--                        <span id="rePwdErr" class="help-block" style="display: none;" >비밀번호와 일치하지 않습니다. 다시 입력해 주세요.</span>-->
+<!--                        <span class="glyphicon glyphicon-ok form-control-feedback" style="display: none;"></span>-->
+<!--                    </div>-->
+
+                    <button class="w-100 btn btn-primary btn-lg" onsubmit="return validateForm()" id="btn-save">제출</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+{{>layout/footer}}
+    <script src="/js/app/index.js"></script>
+{{>layout/footer2}}

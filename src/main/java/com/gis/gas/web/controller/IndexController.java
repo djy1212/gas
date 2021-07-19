@@ -11,4 +11,8 @@ public class IndexController {
     public String index() {
         return "index";
     }
+    @GetMapping("/admissionapp/save")
+    public String admissionSave() {
+        return "save";
+    }
 }
