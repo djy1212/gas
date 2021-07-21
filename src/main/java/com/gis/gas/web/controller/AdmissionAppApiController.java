@@ -29,4 +29,10 @@ public class AdmissionAppApiController {
     public AdmissionAppResponseDto findById(@PathVariable Long id) {
         return admissionAppService.findById(id);
     }
+
+    @DeleteMapping("/api/v1/admissionapp/{id}")
+    public Long delete(@PathVariable Long id) {
+        admissionAppService.delete(id);
+        return id;
+    }
 }

@@ -1,0 +1,65 @@
+{{>layout/header}}
+{{>layout/header2}}
+{{>layout/topbar}}
+<main>
+    <div class="py-5 text-center">
+        <!--            <img class="d-block mx-auto mb-4" src="/img/gvca_logo.png" alt="" width="400" height="150">-->
+        <h2>입학지원시스템</h2>
+        <p class="lead text-left">입학 지원서 수정</p>
+        <p class="lead text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="col-md-12">
+            <div class="col-md-4">
+                <form>
+                    <div class="form-group">
+                        <label for="id">글 번호</label>
+                        <input type="text" class="form-control" id="id" value="{{admissionapp.id}}" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">이름</label>
+                        <input type="text" class="form-control" id="name" value="{{admissionapp.name}}" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="idNumber"> 주민번호 </label>
+                        <input type="text" class="form-control" id="idNumber" value="{{admissionapp.idNumber}}" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender"> 성별 </label>
+                        <input type="text" class="form-control" id="gender" value="{{admissionapp.gender}}" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber"> 전화번호 </label>
+                        <input type="text" class="form-control" id="phoneNumber" value="{{admissionapp.phoneNumber}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="email"> 이메일 </label>
+                        <input type="text" class="form-control" id="email" value="{{admissionapp.email}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="address"> 주소1 </label>
+                        <input type="text" class="form-control" id="address" value="{{admissionapp.address}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="address2"> 주소2 </label>
+                        <input type="text" class="form-control" id="address2" value="{{admissionapp.address2}}">
+                    </div>
+                    <div class="form-group">
+                        <label for="zip"> 우편번호 </label>
+                        <input type="text" class="form-control" id="zip" value="{{admissionapp.zip}}">
+                    </div>
+                    <div class="form-selfIntroduce">
+                        <label for="content"> 자기소개서 </label>
+                        <textarea class="form-control" id="selfIntroduce">{{admissionapp.selfIntroduce}}</textarea>
+                    </div>
+                </form>
+                <a href="/" role="button" class="btn btn-secondary">취소</a>
+                <button type="button" class="btn btn-primary" id="btn-update">수정 완료</button>
+                <button type="button" class="btn btn-danger" id="btn-delete">삭제</button>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+{{>layout/footer}}
+{{>layout/footer2}}

@@ -59,14 +59,11 @@ var main = {
     },
     update : function () {
         var data = {
-            name: document.getElementById("name").value,
-            idNumber: document.getElementById('id-number').value,
             phoneNumber: document.getElementById('phone-number').value,
             email: document.getElementById('email').value,
             address: document.getElementById('address').value,
             address2: document.getElementById('address2').value,
             zip: document.getElementById('zip').value,
-            gender: document.querySelector('input[name="gender"]:checked').value,
             selfIntroduce: document.getElementById('self-introduce').value
         };
         var id = $('#id').val();

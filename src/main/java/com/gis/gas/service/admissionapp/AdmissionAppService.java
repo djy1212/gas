@@ -2,6 +2,7 @@ package com.gis.gas.service.admissionapp;
 
 import com.gis.gas.domain.admissionapp.AdmissionApp;
 import com.gis.gas.domain.admissionapp.AdmissionAppRepository;
+import com.gis.gas.web.dto.admissionapp.AdmissionAppListResponseDto;
 import com.gis.gas.web.dto.admissionapp.AdmissionAppResponseDto;
 import com.gis.gas.web.dto.admissionapp.AdmissionAppSaveRequestDto;
 import com.gis.gas.web.dto.admissionapp.AdmissionAppUpdateRequestDto;
@@ -9,6 +10,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @RequiredArgsConstructor
 @Service
@@ -37,5 +40,16 @@ public class AdmissionAppService {
 
         return new AdmissionAppResponseDto(entity);
     }
+    @Transactional
+    public List<AdmissionAppListResponseDto> findAllDesc() {
+        return admissionAppRepository.findAllDesc().stream().
+                map(AdmissionAppListResponseDto::new).collect(Collectors.toList());
+    }
+    @Transactional
+    public void delete(Long id) {
+        AdmissionApp admissionApp = admissionAppRepository.findById(id).orElseThrow(()
+                -> new IllegalArgumentException("해당 게시글이 없습니다."));
 
+        admissionAppRepository.delete(admissionApp);
+    }
 }

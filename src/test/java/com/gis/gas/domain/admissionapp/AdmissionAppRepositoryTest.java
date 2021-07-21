@@ -42,7 +42,6 @@ class AdmissionAppRepositoryTest {
         LocalDateTime localDateTime = LocalDateTime.now();
 
         admissionAppRepository.save(AdmissionApp.builder()
-                .author(author)
                 .name(name)
                 .idNumber(idNumber)
                 .phoneNumber(phoneNumber)
@@ -52,8 +51,6 @@ class AdmissionAppRepositoryTest {
                 .zip(zip)
                 .gender(gender)
                 .selfIntroduce(selfIntroduce)
-                .createAt(localDateTime)
-                .updatedAt(localDateTime)
                 .build());
         //when
         List<AdmissionApp> admissionAppsList = admissionAppRepository.findAll();
@@ -68,8 +65,6 @@ class AdmissionAppRepositoryTest {
         Assertions.assertThat(admissionApp.getZip()).isEqualTo(zip);
         Assertions.assertThat(admissionApp.getGender()).isEqualTo(gender);
         Assertions.assertThat(admissionApp.getSelfIntroduce()).isEqualTo(selfIntroduce);
-        System.out.println("createAt = " + admissionApp.getCreateAt());
-        System.out.println("updatedAt = " + admissionApp.getUpdatedAt());
 
     }
 }
