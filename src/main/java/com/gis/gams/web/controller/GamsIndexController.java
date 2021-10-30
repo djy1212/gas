@@ -23,5 +23,4 @@ public class GamsIndexController {
     public String studentDetail() {
         return "/gams/student-management/student-detail";
     }
-
 }
